@@ -1,3 +1,8 @@
 def sumar(a, b):
-    return print(f"=====El resultado de la suma es: {a + b}=====")
-
+    try:
+        a = float(a)
+        b = float(b)
+        resultado = a + b
+        print(f"=====El resultado de la suma es: {resultado}=====")
+    except ValueError:
+        print("Error: Ambos argumentos deben ser números válidos (enteros o flotantes).")
